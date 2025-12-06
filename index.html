@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años - Valeria Andarani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@1,400;1,500;1,700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- FONDO -->
+    <div id="background-slider" class="background-slider"></div>
+    <div class="main-overlay"></div>
+
+    <!-- AUDIO -->
+    <div class="music-control" id="music-toggle">
+        <i class="fas fa-volume-mute" id="music-icon"></i>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="assets/audio/musica_fondo.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <span class="sub-title">Nuestra eterna ilusión</span>
+            <h1 class="main-title">Valeria Andarani</h1>
+            <p class="date-styled">Sábado 31 de Enero | 19:00 HRS</p>
+            <div class="rose-icon">⚘</div>
+        </div>
+        <div class="scroll-indicator"><span>⇩</span></div>
+    </header>
+
+    <!-- INVITACIÓN -->
+    <section class="invitation container">
+        <div class="ornament-top"></div>
+        <p class="poetic-text scroll-reveal">
+            "Como en un cuento antiguo donde la magia es real...
+            Tenemos el honor de invitarte a celebrar el comienzo de una nueva historia.
+            Acompáñanos en esta noche encantada donde los sueños florecen
+            y la belleza se encuentra en cada detalle."
+        </p>
+        
+        <div class="names-container scroll-reveal">
+            <div class="group-block">
+                <h3>Con la bendición de mis padres</h3>
+                <p class="name-styled">Marcos Alfredo</p>
+                <p class="name-styled">&</p>
+                <p class="name-styled">Leticia Vanessa</p>
+            </div>
+            <div class="separator-gold"></div>
+            <div class="group-block">
+                <h3>Y mis padrinos</h3>
+                <p class="name-styled">Jorge Ortiz</p>
+                <p class="name-styled">&</p>
+                <p class="name-styled">Rosalia Cruz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="countdown-section">
+        <h2 class="section-title scroll-reveal">La Magia comienza en:</h2>
+        <div id="countdown" class="countdown-container scroll-reveal">
+            <div class="time-box"><span id="days">00</span><span class="label">Días</span></div>
+            <div class="time-box"><span id="hours">00</span><span class="label">Horas</span></div>
+            <div class="time-box"><span id="minutes">00</span><span class="label">Min</span></div>
+            <div class="time-box"><span id="seconds">00</span><span class="label">Seg</span></div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL INTERACTIVO -->
+    <section class="quince-gallery-section">
+        <h2 class="section-title scroll-reveal">La Princesa</h2>
+        
+        <div class="carousel-3d-wrapper scroll-reveal">
+            <div id="gallery-track" class="gallery-track">
+                <!-- JS inyectará las fotos aquí -->
+            </div>
+        </div>
+        
+        <p class="swipe-hint"><i class="fas fa-hand-pointer"></i> Arrastra para ver - Clic para ampliar</p>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="location container">
+        <h2 class="section-title scroll-reveal">Salón Villa Conin</h2>
+        <p class="address scroll-reveal">Autop. México - Querétaro Km 204.5, 76240 San Isidro Miranda, Qro.</p>
+
+        <div class="venue-gallery scroll-reveal">
+            <div class="venue-item"><img src="assets/img/Salon_1.jpg" alt="Salon"></div>
+            <div class="venue-item"><img src="assets/img/Salon_2.jpg" alt="Salon"></div>
+            <div class="venue-item"><img src="assets/img/Salon_3.jpg" alt="Salon"></div>
+        </div>
+        
+        <div class="map-container scroll-reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.163391746284!2d-100.32786642491295!3d20.58133378095874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d343467b7fffff%3A0x6a6d6d6d6d6d6d6d!2sVilla%20Conin!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="buttons-container scroll-reveal">
+            <a href="https://maps.app.goo.gl/fYudu6CCXJhhsLGHA" target="_blank" class="btn-gold">
+                <i class="fas fa-map-marker-alt"></i> Cómo llegar
+            </a>
+            <a href="https://my.matterport.com/show/?m=ywJiNNfL6ab" target="_blank" class="btn-outline">
+                <i class="fas fa-vr-cardboard"></i> Recorrido Virtual
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>XV Años Valeria Andarani &copy; 2025</p>
+    </footer>
+
+    <!-- MODAL LIGHTBOX (Ventana Emergente) -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
